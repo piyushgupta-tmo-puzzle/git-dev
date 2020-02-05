@@ -19,7 +19,7 @@
 
   <mat-form-field>
     <mat-label>Favorite time period</mat-label>
-    <mat-select formControlName="period">
+    <mat-select formControlName="period" (selectionChange)="fetchQuote()">
       <mat-option
         *ngFor="let timePeriod of timePeriods"
         [value]="timePeriod.value"
@@ -28,6 +28,7 @@
       </mat-option>
     </mat-select>
   </mat-form-field>
+
 </form>
 
 <coding-challenge-chart [data$]="quotes$"></coding-challenge-chart>
