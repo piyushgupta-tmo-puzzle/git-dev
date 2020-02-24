@@ -22,7 +22,7 @@
     <mat-select formControlName="period">
       <mat-option
         *ngFor="let timePeriod of timePeriods"
-        [value]="timePeriod.value"
+        [value]="timePeriod?.value"
       >
         {{ timePeriod.viewValue }}
       </mat-option>
