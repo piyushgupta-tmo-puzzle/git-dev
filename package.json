@@ -57,7 +57,8 @@
     "lodash": "^4.17.11",
     "lodash-es": "^4.17.11",
     "rxjs": "6.3.3",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@hapi/h2o2": "8.3.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.0",
