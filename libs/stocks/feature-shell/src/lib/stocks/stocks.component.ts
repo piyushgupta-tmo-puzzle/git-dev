@@ -16,7 +16,7 @@ export class StocksComponent implements OnInit, OnDestroy {
 
   quotes$ = this.priceQuery.priceQueries$;
   
-  private unsubscribe$: Subject<any> = new Subject();
+  private unsubscribe$: Subject<void> = new Subject<void>();
   
   timePeriods = [
     { viewValue: 'All available data', value: 'max' },
